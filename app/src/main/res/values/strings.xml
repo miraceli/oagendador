@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">O-Agendador</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="name_anna">Qual é o seu nome?</string>
+    <string name="name_salao">Qual o nome do salão?</string>
+    <string name="name_endereco">Endereço:</string>
+    <string name="tab_text_1">teste01</string>
+    <string name="tab_text_2">teste02</string>
+    <string name="tab_text_3">teste03</string>
+</resources>
