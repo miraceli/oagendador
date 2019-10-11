@@ -1,4 +1,4 @@
-package e.jonat.o_agendador.ui;
+package br.udesc.oagendador.ui;
 
 import android.os.Bundle;
 
@@ -15,7 +15,8 @@ import android.view.ViewGroup;
 import com.google.android.material.textfield.TextInputEditText;
 
 import androidx.lifecycle.ViewModelProviders;
-import e.jonat.o_agendador.R;
+
+import br.udesc.oagendador.R;
 
 public class CadastroNomeAnnaFragment extends Fragment {
 
