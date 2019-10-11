@@ -1,4 +1,4 @@
-package e.jonat.o_agendador.ui;
+package br.udesc.oagendador.ui;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,7 +11,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
-import e.jonat.o_agendador.R;
+
+import br.udesc.oagendador.R;
 
 public class CadastroNomeSalaoFragment extends Fragment {
 

@@ -1,12 +1,13 @@
-package e.jonat.o_agendador;
+package br.udesc.oagendador;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
-import e.jonat.o_agendador.ui.TabsPagerAdapter;
 
 import android.os.Bundle;
 
 import com.kofigyan.stateprogressbar.StateProgressBar;
+
+import br.udesc.oagendador.ui.TabsPagerAdapter;
 
 public class AtividadeCadastro extends AppCompatActivity {
 
