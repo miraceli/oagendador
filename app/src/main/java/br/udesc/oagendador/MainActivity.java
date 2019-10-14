@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         EditText user = findViewById(R.id.editTextEmail);
         EditText pwd  = findViewById(R.id.editTextPassword);
 
-
         mAuth.signInWithEmailAndPassword(user.getText().toString(), pwd.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -42,7 +41,13 @@ public class MainActivity extends AppCompatActivity {
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(MainActivity.this, "Falhou o login.", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, "Falhou o login.", Toast.LENGTH_SHORT).show();
+                mAuth.createUserWithEmailAndPassword(user.getText().toString(), pwd.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        Toast.makeText(MainActivity.this, "UsuarioCriado", Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
         });
 
