@@ -7,25 +7,49 @@
     android:id="@+id/constraintLayout"
     tools:context="e.jonat.o_agendador.ui.CadastroNomeSalaoFragment">
 
-    <TextView
-        android:id="@+id/text_view_id_salao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/text_view_id"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_marginTop="30dp"
-        android:textSize="15dp"
-        android:text="@string/name_salao" />
-
-    <com.google.android.material.textfield.TextInputEditText
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="15dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginRight="50px"
-        android:layout_marginLeft="50px"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefone">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/telefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50px"
+                android:layout_marginLeft="50px"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50px"
+                android:layout_marginLeft="50px"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar"
+            android:textSize="20dp"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textAppearance="@style/Widget.MaterialComponents.Button.TextButton"/>
+    </LinearLayout>
 </FrameLayout>

@@ -46,6 +46,9 @@ public class CadastroNomeAnnaFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         TextInputEditText nameEditText = view.findViewById(R.id.text_field_id_anna);
 
+        view.findViewById(R.id.confirmar);
+
+
         // Add Text Watcher on name input text
         nameEditText.addTextChangedListener(new TextWatcher() {
             @Override public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) { }

@@ -6,19 +6,45 @@
     android:id="@+id/constraintLayout"
     tools:context="e.jonat.o_agendador.ui.CadastroEnderecoFragment">
 
-    <TextView
-        android:id="@+id/text_view_id"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:textSize="15dp"
-        android:text="@string/name_endereco" />
-
-    <com.google.android.material.textfield.TextInputEditText
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="15dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="50px"
-        android:layout_marginLeft="50px"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clipToPadding="false">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome do Serviço"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Servico">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/servico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50px"
+                android:layout_marginLeft="50px"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar"
+            android:textSize="20dp"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textAppearance="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+
+    </LinearLayout>
 </FrameLayout>

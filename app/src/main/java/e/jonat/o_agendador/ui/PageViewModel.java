@@ -17,6 +17,9 @@ public class PageViewModel extends ViewModel {
         }
     });
 
+    private String nomeDaAnna;
+
+
     public void setIndex(String index) {
         mTitle.setValue(index);
     }

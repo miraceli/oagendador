@@ -43,13 +43,13 @@ public class CadastroNomeSalaoFragment extends Fragment {
 
     @Override public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        txtName = view.findViewById(R.id.text_view_id_salao);
+        //txtName = view.findViewById(R.id.text_view_id_salao);
 
-        pageViewModel.getText().observe(requireActivity(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                txtName.setText(s);
-            }
-        });
+        //pageViewModel.getText().observe(requireActivity(), new Observer<String>() {
+        //   @Override
+        //   public void onChanged(@Nullable String s) {
+        //       txtName.setText(s);
+        //   }
+        //});
     }
 }
