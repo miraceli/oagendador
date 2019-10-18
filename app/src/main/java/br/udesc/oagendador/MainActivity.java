@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
 
+    EditText user;
+    EditText pwd;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick(View v) {
 
-        EditText user = findViewById(R.id.editTextEmail);
-        EditText pwd  = findViewById(R.id.editTextPassword);
+       user = findViewById(R.id.editTextEmail);
+       pwd  = findViewById(R.id.editTextPassword);
 
         mAuth.signInWithEmailAndPassword(user.getText().toString(), pwd.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
@@ -45,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 mAuth.createUserWithEmailAndPassword(user.getText().toString(), pwd.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        Toast.makeText(MainActivity.this, "UsuarioCriado", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "UsuarioCriado", Toast.LENGTH_LONG).show();
                     }
                 });
             }
