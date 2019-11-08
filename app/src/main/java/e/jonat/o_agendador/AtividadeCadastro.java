@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 import e.jonat.o_agendador.ui.TabsPagerAdapter;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.kofigyan.stateprogressbar.StateProgressBar;
 
@@ -15,7 +17,7 @@ public class AtividadeCadastro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_atividade_cadastro);
 
-        final StateProgressBar stateProgressBar = (StateProgressBar) findViewById(R.id.your_state_progress_bar_id);
+        final StateProgressBar stateProgressBar = findViewById(R.id.your_state_progress_bar_id);
 
         TabsPagerAdapter tabsPagerAdapter = new TabsPagerAdapter(getSupportFragmentManager(), this);
 
@@ -46,5 +48,9 @@ public class AtividadeCadastro extends AppCompatActivity {
         });
         viewPager.setAdapter(tabsPagerAdapter);
     }
+
+
+
+
 
 }

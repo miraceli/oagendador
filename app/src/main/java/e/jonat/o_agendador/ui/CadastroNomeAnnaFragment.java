@@ -19,8 +19,6 @@ import e.jonat.o_agendador.R;
 
 public class CadastroNomeAnnaFragment extends Fragment {
 
-    private static final String TAG = "SpeedDial";
-
     private PageViewModel pageViewModel;
 
     public static CadastroNomeAnnaFragment newInstance() {
@@ -31,7 +29,6 @@ public class CadastroNomeAnnaFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         pageViewModel = ViewModelProviders.of(this).get(PageViewModel.class);
-        pageViewModel.setIndex(TAG);
     }
 
     @Override
@@ -42,22 +39,4 @@ public class CadastroNomeAnnaFragment extends Fragment {
         return root;
     }
 
-    @Override public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        TextInputEditText nameEditText = view.findViewById(R.id.text_field_id_anna);
-
-        view.findViewById(R.id.confirmar);
-
-
-        // Add Text Watcher on name input text
-        nameEditText.addTextChangedListener(new TextWatcher() {
-            @Override public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) { }
-
-            @Override public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                pageViewModel.setName(charSequence.toString());
-            }
-
-            @Override public void afterTextChanged(Editable editable) {  }
-        });
-    }
 }
