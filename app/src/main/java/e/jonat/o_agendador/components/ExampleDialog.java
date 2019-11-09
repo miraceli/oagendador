@@ -5,15 +5,30 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.Spinner;
+import android.widget.Switch;
 
+import java.util.List;
+import java.util.Locale;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.FragmentManager;
+import ca.antonious.materialdaypicker.DefaultSelectionMode;
+import ca.antonious.materialdaypicker.MaterialDayPicker;
+import ca.antonious.materialdaypicker.SingleSelectionMode;
 import e.jonat.o_agendador.R;
 
 public class ExampleDialog extends DialogFragment {
 
     public static final String TAG = "example_dialog";
+
+
 
     private Toolbar toolbar;
 
@@ -47,6 +62,9 @@ public class ExampleDialog extends DialogFragment {
         View view = inflater.inflate(R.layout.example_dialog, container, false);
 
         toolbar = view.findViewById(R.id.toolbar);
+
+
+
 
         return view;
     }

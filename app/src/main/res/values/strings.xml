@@ -10,4 +10,14 @@
     <string name="tab_text_1">teste01</string>
     <string name="tab_text_2">teste02</string>
     <string name="tab_text_3">teste03</string>
+    <string name="button_text_cancel">Teste01</string>
+    <string name="button_text_ok">Teste02</string>
+
+    <string-array name="servicos_array">
+        <item>Corte Cabelo</item>
+        <item>Barba</item>
+        <item>Escova</item>
+        <item>Barba e Cabelo</item>
+    </string-array>
+
 </resources>
