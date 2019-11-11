@@ -1,12 +1,11 @@
-package e.jonat.o_agendador;
+package br.udesc.oagendador;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
-import e.jonat.o_agendador.ui.TabsPagerAdapter;
+import br.udesc.oagendador.ui.TabsPagerAdapter;
+import br.udesc.oagendador.R;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import com.kofigyan.stateprogressbar.StateProgressBar;
 

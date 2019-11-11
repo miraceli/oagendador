@@ -1,28 +1,16 @@
-package e.jonat.o_agendador.components;
+package br.udesc.oagendador.components;
 
 import android.app.Dialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.CompoundButton;
-import android.widget.Spinner;
-import android.widget.Switch;
 
-import java.util.List;
-import java.util.Locale;
-
-import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.FragmentManager;
-import ca.antonious.materialdaypicker.DefaultSelectionMode;
-import ca.antonious.materialdaypicker.MaterialDayPicker;
-import ca.antonious.materialdaypicker.SingleSelectionMode;
-import e.jonat.o_agendador.R;
+
+import br.udesc.oagendador.R;
 
 public class ExampleDialog extends DialogFragment {
 

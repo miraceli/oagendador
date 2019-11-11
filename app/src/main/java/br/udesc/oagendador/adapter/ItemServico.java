@@ -1,4 +1,4 @@
-package e.jonat.o_agendador.adapter;
+package br.udesc.oagendador.adapter;
 
 import android.net.Uri;
 

@@ -1,8 +1,10 @@
-package e.jonat.o_agendador;
+package br.udesc.oagendador;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import br.udesc.oagendador.R;
 
 public class Agendamento extends AppCompatActivity {
 

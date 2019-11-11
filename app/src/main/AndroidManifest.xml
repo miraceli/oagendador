@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="e.jonat.o_agendador">
+    package="br.udesc.oagendador">
 
     <application
         android:allowBackup="true"
@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".adapter.ItemServico"></activity>
-        <activity android:name=".Agendamento" />
-        <activity android:name=".AtividadeCadastro" />
-        <activity android:name=".MainActivity">
+        <activity android:name="br.udesc.oagendador.adapter.ItemServico"></activity>
+        <activity android:name="br.udesc.oagendador.Agendamento" />
+        <activity android:name="br.udesc.oagendador.AtividadeCadastro" />
+        <activity android:name="br.udesc.oagendador.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

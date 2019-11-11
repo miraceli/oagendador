@@ -1,13 +1,10 @@
-package e.jonat.o_agendador.ui;
+package br.udesc.oagendador.ui;
 
 import android.content.Context;
 
-import androidx.annotation.Nullable;
-import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-import e.jonat.o_agendador.R;
 
 public class TabsPagerAdapter extends FragmentPagerAdapter {
 

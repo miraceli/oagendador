@@ -1,4 +1,4 @@
-package e.jonat.o_agendador.ui;
+package br.udesc.oagendador.ui;
 
 import androidx.arch.core.util.Function;
 import androidx.lifecycle.LiveData;

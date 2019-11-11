@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context="e.jonat.o_agendador.AtividadeCadastro">
+    tools:context="e.jonat.o_agendador.br.udesc.oagendador.AtividadeCadastro">
 
     <com.kofigyan.stateprogressbar.StateProgressBar
         android:id="@+id/your_state_progress_bar_id"

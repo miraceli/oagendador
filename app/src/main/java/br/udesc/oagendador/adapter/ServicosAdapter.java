@@ -1,4 +1,4 @@
-package e.jonat.o_agendador.adapter;
+package br.udesc.oagendador.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import e.jonat.o_agendador.R;
+import br.udesc.oagendador.R;
 
 public class ServicosAdapter extends ArrayAdapter<ItemServico> {
 

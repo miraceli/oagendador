@@ -1,4 +1,4 @@
-package e.jonat.o_agendador;
+package br.udesc.oagendador;
 
 import org.junit.Test;
 

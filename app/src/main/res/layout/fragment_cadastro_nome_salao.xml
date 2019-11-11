@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/constraintLayout"
-    tools:context="e.jonat.o_agendador.ui.CadastroNomeSalaoFragment">
+    tools:context="br.udesc.oagendador.ui.CadastroNomeSalaoFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

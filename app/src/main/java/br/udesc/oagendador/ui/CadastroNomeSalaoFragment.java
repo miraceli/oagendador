@@ -1,4 +1,4 @@
-package e.jonat.o_agendador.ui;
+package br.udesc.oagendador.ui;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -6,16 +6,16 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.google.android.material.textfield.TextInputEditText;
-import com.maltaisn.recurpicker.Recurrence;
 
 import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
+
+import br.udesc.oagendador.R;
 import ca.antonious.materialdaypicker.MaterialDayPicker;
-import e.jonat.o_agendador.R;
-import e.jonat.o_agendador.components.ExampleDialog;
+import br.udesc.oagendador.components.ExampleDialog;
 
 public class CadastroNomeSalaoFragment extends Fragment  {
 

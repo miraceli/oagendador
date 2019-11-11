@@ -1,32 +1,23 @@
-package e.jonat.o_agendador.ui;
+package br.udesc.oagendador.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
-import e.jonat.o_agendador.Agendamento;
-import e.jonat.o_agendador.AtividadeCadastro;
-import e.jonat.o_agendador.MainActivity;
-import e.jonat.o_agendador.R;
-import e.jonat.o_agendador.adapter.ItemServico;
-import e.jonat.o_agendador.adapter.ServicosAdapter;
+import br.udesc.oagendador.Agendamento;
+import br.udesc.oagendador.R;
+import br.udesc.oagendador.adapter.ItemServico;
+import br.udesc.oagendador.adapter.ServicosAdapter;
 
-import static e.jonat.o_agendador.R.layout.fragment_cadastro_endereco;
 
 public class CadastroEnderecoFragment extends Fragment implements View.OnClickListener {
 
@@ -49,7 +40,7 @@ public class CadastroEnderecoFragment extends Fragment implements View.OnClickLi
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(fragment_cadastro_endereco, container, false);
+        View view = inflater.inflate(R.layout.fragment_cadastro_endereco, container, false);
 
         ListView list = view.findViewById(R.id.list_servicos);
         this.listaDoida = list;
