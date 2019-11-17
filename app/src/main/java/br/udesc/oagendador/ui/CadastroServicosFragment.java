@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
@@ -17,18 +18,20 @@ import br.udesc.oagendador.Agendamento;
 import br.udesc.oagendador.R;
 import br.udesc.oagendador.adapter.ItemServico;
 import br.udesc.oagendador.adapter.ServicosAdapter;
+import br.udesc.oagendador.components.DialogServico;
 
+import static br.udesc.oagendador.R.layout.fragment_cadastro_servicos;
 
-public class CadastroEnderecoFragment extends Fragment implements View.OnClickListener {
+public class CadastroServicosFragment extends Fragment implements View.OnClickListener {
 
-    ListView listaDoida;
+    ListView listaServicos;
     ArrayList<ItemServico> arrayList;
     Spinner spinner;
 
     private PageViewModel pageViewModel;
 
-    public static CadastroEnderecoFragment newInstance() {
-        return new CadastroEnderecoFragment();
+    public static CadastroServicosFragment newInstance() {
+        return new CadastroServicosFragment();
     }
 
     @Override
@@ -40,10 +43,11 @@ public class CadastroEnderecoFragment extends Fragment implements View.OnClickLi
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_cadastro_endereco, container, false);
+        View view = inflater.inflate(fragment_cadastro_servicos, container, false);
 
         ListView list = view.findViewById(R.id.list_servicos);
-        this.listaDoida = list;
+        this.listaServicos = list;
+
         arrayList = new ArrayList<>();
 
         this.spinner = view.findViewById(R.id.servicos_spinner);
@@ -69,22 +73,30 @@ public class CadastroEnderecoFragment extends Fragment implements View.OnClickLi
 
         ServicosAdapter adapter = new ServicosAdapter(v.getContext(), arrayList);
 
-        this.listaDoida.setAdapter(adapter);
+        this.listaServicos.setAdapter(adapter);
 
         switch (spinner.getSelectedItem().toString()){
             case "Corte Cabelo":
-                arrayList.add(new ItemServico("Cabelo", "Corte de Cabelo", "R$ 30,00", "08:00 - 18:00"));
+                arrayList.add(new ItemServico("Cabelo", "Corte de Cabelo"));
                 break;
             case "Barba":
-                arrayList.add(new ItemServico("Barba", "Barba feita", "R$ 20,00", "08:00 - 18:00"));
+                arrayList.add(new ItemServico("Barba", "Barba feita"));
                 break;
             case "Escova":
-                arrayList.add(new ItemServico("Escova", "Aplicação de Escova p/ Cabelo", "R$ 50,00", "08:00 - 12:00"));
+                arrayList.add(new ItemServico("Escova", "Aplicação de Escova p/ Cabelo"));
                 break;
             case "Barba e Cabelo":
-                arrayList.add(new ItemServico("Barba e Cabelo", "2 por 1", "R$ 40,00", "13:30 - 17:00"));
+                arrayList.add(new ItemServico("Barba e Cabelo", "2 por 1"));
                 break;
         }
+
+        this.listaServicos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                ItemServico itemServico = arrayList.get(position);
+                DialogServico.display(getActivity().getSupportFragmentManager(), itemServico, adapter);
+            }
+        });
 
     }
 }

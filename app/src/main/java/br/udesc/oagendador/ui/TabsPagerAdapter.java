@@ -19,11 +19,11 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return CadastroNomeAnnaFragment.newInstance();
+                return CadastroAnnaFragment.newInstance();
             case 1:
-                return CadastroNomeSalaoFragment.newInstance();
+                return CadastroSalaoFragment.newInstance();
             case 2:
-                return CadastroEnderecoFragment.newInstance();
+                return CadastroServicosFragment.newInstance();
             default:
                 return null;
         }
@@ -31,7 +31,6 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        // Show 3 total pages.
         return 3;
     }
 

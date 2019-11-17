@@ -50,7 +50,12 @@ public class ServicosAdapter extends ArrayAdapter<ItemServico> {
         holder.titulo.setText(servico.getTitulo());
         holder.desc.setText(servico.getDescricao());
         holder.valor.setText(servico.getValor());
-        holder.horario.setText(servico.getHorario());
+        if(servico.getHorarioEntrada() == null || servico.getHorarioSaida() == null ){
+            holder.horario.setText("");
+        }
+        else{
+            holder.horario.setText(servico.getHorarioEntrada() + " - " + servico.getHorarioSaida());
+        }
 
         return itemView;
     }

@@ -17,17 +17,6 @@ public class PageViewModel extends ViewModel {
         }
     });
 
-    private String nomeDaAnna;
-
-
-    public void setIndex(String index) {
-        mTitle.setValue(index);
-    }
-
-    public void setName(String name) {
-        mTitle.setValue(name);
-    }
-
     public LiveData<String> getText() {
         return mText;
     }

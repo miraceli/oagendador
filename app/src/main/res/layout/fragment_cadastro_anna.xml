@@ -3,21 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:id="@+id/constraintLayout"
-    tools:context="br.udesc.oagendador.ui.CadastroNomeSalaoFragment">
+    tools:context="br.udesc.oagendador.ui.CadastroAnnaFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome do Salão">
+            android:hint="Nome da Anna">
+
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/nome"
+                android:id="@+id/text_field_id_anna"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="15dp"
@@ -29,24 +30,30 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Horarios">
+            android:hint="Telefone">
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/HorariosSalao"
+                android:id="@+id/telefone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:focusable="false"
                 android:textSize="15dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="50px"
-                android:layout_marginLeft="50px"
-                />
+                android:layout_marginLeft="50px"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <ca.antonious.materialdaypicker.MaterialDayPicker
-            android:id="@+id/dayPicker"
-            android:layout_width="wrap_content"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"        />
+            android:hint="E-mail">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50px"
+                android:layout_marginLeft="50px"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
 </FrameLayout>

@@ -2,45 +2,31 @@ package br.udesc.oagendador.adapter;
 
 import java.io.Serializable;
 
-public class ItemServico implements Serializable {
+public class ItemHorarioSalao implements Serializable {
+
+    private int indice;
 
     private String titulo;
-
-    private String descricao;
-
-    private String valor;
 
     private String horarioEntrada;
 
     private String horarioSaida;
 
-    public ItemServico(String titulo, String descricao) {
+    public ItemHorarioSalao(int indice, String titulo) {
+        this.indice = indice;
         this.titulo = titulo;
-        this.descricao = descricao;
+    }
+
+    public int getIndice() {
+        return indice;
     }
 
     public String getTitulo() {
         return titulo;
     }
 
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public String getValor() {
-        return valor;
-    }
-
     public void setTitulo(String titulo) {
         this.titulo = titulo;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public void setValor(String valor) {
-        this.valor = valor;
     }
 
     public String getHorarioEntrada() {
