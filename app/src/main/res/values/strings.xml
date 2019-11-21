@@ -20,4 +20,11 @@
         <item>Barba e Cabelo</item>
     </string-array>
 
+    <string name="title_activity_main_cadastro_cliente">Clientes</string>
+    <string name="title_activity_card_cliente">Clientes</string>
+    <string name="lbl_nome">Nome</string>
+    <string name="lbl_endereco">Endereco</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_telefone">Telefone</string>
+
 </resources>

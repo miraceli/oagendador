@@ -9,10 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="br.udesc.oagendador.adapter.ItemServico"></activity>
-        <activity android:name="br.udesc.oagendador.Agendamento" />
-        <activity android:name="br.udesc.oagendador.AtividadeCadastro" />
-        <activity android:name="br.udesc.oagendador.MainActivity">
+        <activity
+            android:name=".CardCliente"
+            android:label="@string/title_activity_card_cliente"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".MainCadastroCliente"
+            android:label="@string/title_activity_main_cadastro_cliente"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".adapter.ItemServico" />
+        <activity android:name=".Agendamento" />
+        <activity android:name=".AtividadeCadastro" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
